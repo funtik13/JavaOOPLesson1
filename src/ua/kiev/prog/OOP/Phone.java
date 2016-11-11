@@ -7,7 +7,6 @@ public abstract class Phone {
 	protected boolean hasWifi;
 	protected int screenSize;
     protected int countSMS;
-    protected int countCall;
     protected String number;
 
     public static void add(Phone s) {
