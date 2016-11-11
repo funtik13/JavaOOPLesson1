@@ -2,17 +2,11 @@ package ua.kiev.prog.OOP;
 
 import java.util.Scanner;
 
-public class Circle {
+public class Circle extends Figure{
 
     private int x;
     private int y;
     private double radius;
-
-    public Circle(){
-        x = 0;
-        y = 0;
-        radius = 1;
-    }
 
     public Circle(int x, int y, double radius){
         this.x = x;
@@ -28,15 +22,15 @@ public class Circle {
         }while(this.radius < 0);
     }
 
-    public String toString() {
-        return "Circle with center x=" + x + ", y=" + y +
-                " and radius=" + radius;
-    }
-
-    public double areaOfACircle(){
+    @Override
+    public double getS() {
         return Math.PI * Math.pow(radius, 2);
     }
 
+    private void setNewRadius(){
+        Scanner scan = new Scanner(System.in);
+        radius = scan.nextDouble();
+    }
 
     public int getX() {
         return x;
@@ -69,11 +63,6 @@ public class Circle {
 
     public void setY(int y) {
         this.y = y;
-    }
-
-    private void setNewRadius(){
-        Scanner scan = new Scanner(System.in);
-        radius = scan.nextDouble();
     }
 
 }
