@@ -25,6 +25,8 @@ public class MainClass {
         Phone.add(samsung3);
 
         samsung.call("123");
+        System.out.println(samsung.countCall);
+        System.out.println(samsung1.countCall);
 
 
     }
