@@ -1,4 +1,4 @@
-package ua.kiev.prog;
+package ua.kiev.prog.start;
 
 public class Exersice2 {
 

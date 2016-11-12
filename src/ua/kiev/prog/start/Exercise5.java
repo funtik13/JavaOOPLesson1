@@ -1,4 +1,4 @@
-package ua.kiev.prog;
+package ua.kiev.prog.start;
 
 import java.io.BufferedReader;
 import java.io.IOException;

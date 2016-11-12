@@ -1,4 +1,4 @@
-package ua.kiev.prog;
+package ua.kiev.prog.start;
 
 import java.util.Calendar;
 import java.util.Scanner;
